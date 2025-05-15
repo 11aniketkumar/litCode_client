@@ -12,6 +12,19 @@ function Editor() {
   const { roomId } = useParams();
   const navigate = useNavigate();
 
+  // Keep server alive every 14 minutes
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      fetch(`${import.meta.env.VITE_APP_BACKEND_URL || 'http://localhost:5000'}/api/keep-alive`)
+        .then((res) => res.json())
+        .then((data) => console.log('Server is kept alive:', data))
+        .catch((error) => console.error('Error keeping server alive:', error));
+    }, 14 * 60 * 1000); // 14 minutes in milliseconds
+
+    // Cleanup interval on unmount
+    return () => clearInterval(intervalId);
+  }, []);
+
   useEffect(() => {
     if (!roomId) {
       // Fetch a new random room ID
