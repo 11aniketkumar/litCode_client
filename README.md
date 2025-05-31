@@ -1,3 +1,3 @@
 # LitCode
 
-- A code sharing platform
+- A multipurpose code sharing platform
