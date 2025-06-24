@@ -18,7 +18,8 @@ const themes = {
     ocean: EditorView.theme({
         "&": { backgroundColor: "#1e3a5f", color: "#d1e8ff" }, 
         ".cm-scroller": { backgroundColor: "#1e3a5f" }, 
-        ".cm-content": { backgroundColor: "#1e3a5f", caretColor: "#00bcd4" ,caretWidth:"5px" }, 
+        ".cm-content": { caretColor: "#00bcd4" ,caretWidth:"5px" },
+        ".cm-content::selection": { color: "yellow" },
         ".cm-selectionBackground": { backgroundColor: "#3b82f6" },
         ".cm-activeLine": { backgroundColor: "#2a4365" },
         ".cm-keyword": { color: "#ff6f61" },
@@ -30,7 +31,8 @@ const themes = {
     midnight: EditorView.theme({
         "&": { backgroundColor: "#121212", color: "#e0e0e0" },
         ".cm-scroller": { backgroundColor: "#121212" },
-        ".cm-content": { backgroundColor: "#121212", caretColor: "#bb86fc" },
+        ".cm-content": { caretColor: "#bb86fc" },
+        ".cm-content::selection": { color: "yellow" },
         ".cm-selectionBackground": { backgroundColor: "#3700b3" },
         ".cm-activeLine": { backgroundColor: "#1f1f1f" },
         ".cm-keyword": { color: "#03dac6" },
@@ -42,7 +44,8 @@ const themes = {
     lavender: EditorView.theme({
         "&": { backgroundColor: "#f3e5f5", color: "#4a148c" },
         ".cm-scroller": { backgroundColor: "#f3e5f5" },
-        ".cm-content": { backgroundColor: "#f3e5f5", caretColor: "#7b1fa2" },
+        ".cm-content": { caretColor: "#7b1fa2" },
+        ".cm-content::selection": { color: "yellow" },
         ".cm-selectionBackground": { backgroundColor: "#ce93d8" },
         ".cm-activeLine": { backgroundColor: "#e1bee7" },
         ".cm-keyword": { color: "#ab47bc" },
@@ -53,7 +56,8 @@ const themes = {
     dracula: EditorView.theme({
         "&": { backgroundColor: "#282a36", color: "#f8f8f2" },
         ".cm-scroller": { backgroundColor: "#282a36" },
-        ".cm-content": { backgroundColor: "#282a36", caretColor: "#ff79c6" },
+        ".cm-content": { caretColor: "#ff79c6" },
+        ".cm-content::selection": { color: "yellow" },
         ".cm-selectionBackground": { backgroundColor: "#44475a" },
         ".cm-activeLine": { backgroundColor: "#3d3f4b" },
         ".cm-keyword": { color: "#ff79c6" },
@@ -65,7 +69,8 @@ const themes = {
     solarizedLight: EditorView.theme({
         "&": { backgroundColor: "#fdf6e3", color: "#2aa198" },
         ".cm-scroller": { backgroundColor: "#fdf6e3" },
-        ".cm-content": { backgroundColor: "#fdf6e3", caretColor: "#2aa198" },
+        ".cm-content": { caretColor: "#2aa198" },
+        ".cm-content::selection": { color: "yellow" },
         ".cm-selectionBackground": { backgroundColor: "#eee8d5" },
         ".cm-activeLine": { backgroundColor: "#eee8d5" },
         ".cm-keyword": { color: "#268bd2" },
@@ -77,7 +82,8 @@ const themes = {
     monokai: EditorView.theme({
         "&": { backgroundColor: "#272822", color: "#f8f8f2" },
         ".cm-scroller": { backgroundColor: "#272822" },
-        ".cm-content": { backgroundColor: "#272822", caretColor: "#66d9ef" },
+        ".cm-content": { caretColor: "#66d9ef" },
+        ".cm-content::selection": { color: "yellow" },
         ".cm-selectionBackground": { backgroundColor: "#49483e" },
         ".cm-activeLine": { backgroundColor: "#3e3d32" },
         ".cm-keyword": { color: "#f92672" },
@@ -89,7 +95,8 @@ const themes = {
     nord: EditorView.theme({
         "&": { backgroundColor: "#2e3440", color: "#d8dee9" },
         ".cm-scroller": { backgroundColor: "#2e3440" },
-        ".cm-content": { backgroundColor: "#2e3440", caretColor: "#88c0d0" },
+        ".cm-content": { caretColor: "#88c0d0" },
+        ".cm-content::selection": { color: "yellow" },
         ".cm-selectionBackground": { backgroundColor: "#4c566a" },
         ".cm-activeLine": { backgroundColor: "#3b4252" },
         ".cm-keyword": { color: "#81a1c1" },
@@ -101,7 +108,8 @@ const themes = {
     highContrast: EditorView.theme({
         "&": { backgroundColor: "#ffffff", color: "#000000" },
         ".cm-scroller": { backgroundColor: "#ffffff" },
-        ".cm-content": { backgroundColor: "#ffffff", caretColor: "#000000" },
+        ".cm-content": { caretColor: "#000000" },
+        ".cm-content::selection": { color: "yellow" },
         ".cm-selectionBackground": { backgroundColor: "#b3d7ff" },
         ".cm-activeLine": { backgroundColor: "#e6e6e6" },
         ".cm-keyword": { color: "#0000ff", fontWeight: "bold" },
